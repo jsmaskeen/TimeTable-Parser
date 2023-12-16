@@ -3,7 +3,7 @@ from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField
 from wtforms.validators import DataRequired
 from uuid import uuid4
-from app import get_timetable
+from worker import get_timetable
 
 app = Flask(__name__)
 app.config["SECRET_KEY"] = str(uuid4())

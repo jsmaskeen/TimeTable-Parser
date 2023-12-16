@@ -2,7 +2,7 @@
 v: 0
 micros:
   - name: timetableparser
-    src: ./
+    src: .
     engine: python3.9
     primary: true
     public_routes:
