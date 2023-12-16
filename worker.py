@@ -144,7 +144,7 @@ def get_timetable(roll_num, sem):
             for s in slot:
                 if not ts_values_map[s.upper()][0] == 1:
                 # print(locati)
-                    ts=ts.replace(s.upper(),f'{s.upper()} {ccode.upper()} (Lecture)||({get_location(ccode.upper(),roll_num,'Lecture',locati)})')
+                    ts=ts.replace(s.upper(),f'{s.upper()} {ccode.upper()} (Lecture)||({get_location(ccode.upper(),roll_num,"Lecture",locati)})')
                     ts_values_map[s.upper()] = [1,0]
                 else:
                 # print(f'{s.upper()} already exists')
@@ -156,7 +156,7 @@ def get_timetable(roll_num, sem):
         # print(locati)
             for s in slot:
                 if not ts_values_map[s.upper()][0] == 1:
-                    ts=ts.replace(s.upper(),f'{s.upper()} {ccode.upper()} (Tutorial)||({get_location(ccode.upper(),roll_num,'Tutorial',locati)})')
+                    ts=ts.replace(s.upper(),f'{s.upper()} {ccode.upper()} (Tutorial)||({get_location(ccode.upper(),roll_num,"Tutorial",locati)})')
                     ts_values_map[s.upper()] = [1,0]
                 else:
                 # print(f'{s.upper()} already exists')
@@ -170,7 +170,7 @@ def get_timetable(roll_num, sem):
         # print(locati)
             for s in slot:
                 if not ts_values_map[s.upper()][0] == 1:
-                    ts=ts.replace(s.upper(),f'{s.upper()} {ccode.upper()} (Lab)||({get_location(ccode.upper(),roll_num,'Lab',locati)})')
+                    ts=ts.replace(s.upper(),f'{s.upper()} {ccode.upper()} (Lab)||({get_location(ccode.upper(),roll_num,"Lab",locati)})')
                     ts_values_map[s.upper()] = [1,0]
                 else:
                 # print(f'{s.upper()} already exists')
